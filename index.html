@@ -1,0 +1,32 @@
+<html>
+<head>
+     <title>farmers helpline</title>
+     <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+<body>
+     <div class="contact-title">
+             <img src="digi.png" width="10%" height="10%">
+             <h1>HELLO FARMERS:)</h1>
+             <h2>WE ARE WAITING FOR HELP YOU...</h2>
+     </div>
+    
+     <div class="contact-form">
+         <form id="contact-form" method="post" action="contact-form-handler.php" name="form1">
+         <input name="name" type="text" class="form-control" placeholder="Your Name" required>
+         <br>
+         <br>
+         <input name="email" type="email" class="form-control" placeholder="Your Email" required>
+         <br>
+         <br>
+         <input name="contact" type="tel" pattern="[0-9]{10}" class="form-control" placeholder="Your mobile number" required> 
+         <br>
+         <br>
+             <textarea name="message" class="form-control" placeholder="Message" row="4" required></textarea>
+             <br>
+             <br>
+            <class="submit">
+            <input type="submit" class="form-control submit" name= "submit" value="SEND MESSAGE" onclick="phonenumber(document.form1.contact)"/>
+         </form>
+     </div>
+</body>
+</html>
